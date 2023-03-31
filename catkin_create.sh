@@ -7,6 +7,8 @@ source devel/setup.bash
 echo $ROS_PACKAGE_PATH
 cd ~/nala_moco/src
 gitclone https://github.com/Bhanu5302/moco2.1.git
-cd ..
+cd ~/nala_moco
 source devel/setup.bash
 catkin_make
+cd /etc
+
