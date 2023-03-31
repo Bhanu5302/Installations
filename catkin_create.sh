@@ -1,3 +1,4 @@
+#!/bin/bash -eu
 source /opt/ros/noetic/setup.bash
 mkdir -p ~/nala_moco/src
 cd ~/nala_moco/
