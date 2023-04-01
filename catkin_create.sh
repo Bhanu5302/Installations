@@ -15,6 +15,7 @@ source ~/nala_moco/devel/setup.bash
 echo "source ~/nala_moco/devel/setup.bash">>~/.bashrc
 source ~/.bashrc
 echo "Downloaded moco2.1"
+echo "Downloading busybox & python can packages"
 sudo apt-get install busybox
 sudo apt-get install pip
 pip install python-can
