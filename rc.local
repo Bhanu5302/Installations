@@ -1,0 +1,25 @@
+#!/bin/bash -e
+sudo busybox devmem 0x0c303000 32 0x0000C400
+sudo busybox devmem 0x0c303008 32 0x0000C458
+sudo busybox devmem 0x0c303010 32 0x0000C400
+sudo busybox devmem 0x0c303018 32 0x0000C458
+sudo modprobe can
+sudo modprobe can_raw
+sudo modprobe mttcan
+
+sudo ip link set can0 type can bitrate 500000
+sudo ip link set can1 type can bitrate 500000
+sudo ip link set up can0
+sudo ip link set up can1
+user_name=$(whoami)
+
+#source /opt/ros/noetic/setup.bash && source /home/${user_name}/nala_moco/devel/setup.bash && ro>
+#bash -i -c 'sleep 10&&roslaunch rosbridge_server rosbridge_websocket.launch&&s>
+#roslaunch rosbridge_server rosbridge_websocket.launch
+
+#sudo service gdm3 stop && sudo service gdm3 start && export DISPLAY:=0
+
+exit 0
+
+
+
