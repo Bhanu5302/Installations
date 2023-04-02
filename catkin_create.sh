@@ -19,3 +19,5 @@ echo "Downloading busybox & python can packages"
 sudo apt-get install busybox
 sudo apt-get install pip
 pip install python-can
+pip install adafruit-circuitpython-neopixel-spi
+pip install pymodbus
