@@ -172,6 +172,7 @@ pip install python-can
 pip install pyserial
 pip install board
 pip install adafruit-circuitpython-neopixel-spi
+pip install pymodbus
 
 user_name=$(whoami)
 echo "#######################################################################################################################"
