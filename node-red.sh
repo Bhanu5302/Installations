@@ -4,10 +4,8 @@
 user_name=$(whoami)
 echo "#######################################################################################################################"
 echo ">>Nodejs14.x & Node-red installation started"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-source ~/.bashrc
-nvm install v14.10.0
-nvm list
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+cat /etc/apt/sources.list.d/nodesource.list
+sudo apt -y install nodejs
 sudo npm install -g --unsafe-perm node-red
 node-red -v
