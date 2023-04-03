@@ -21,3 +21,4 @@ sudo apt-get install pip
 pip install python-can
 pip install adafruit-circuitpython-neopixel-spi
 pip install pymodbus
+pip install pyserial
