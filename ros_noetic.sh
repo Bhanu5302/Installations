@@ -146,8 +146,8 @@ echo ">>> {Type [ rosversion -d ] to get the current ROS installed version}"
 echo ""
 echo "#######################################################################################################################"
 echo ">>>Installing ros bridge server & suite"
-sudo apt-get install ros-${name_ros_distro}-rosbridge-server
-sudo apt-get install ros-${name_ros_distro}-rosbridge-suite
-source /opt/ros/${name_ros_distro}/setup.bash
+sudo apt-get install ros-noetic-rosbridge-server
+sudo apt-get install ros-noetic-rosbridge-suite
+source /opt/ros/noetic/setup.bash
 
 
