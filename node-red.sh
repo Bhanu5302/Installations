@@ -9,4 +9,3 @@ cat /etc/apt/sources.list.d/nodesource.list
 sudo apt -y install nodejs
 node  -v
 sudo npm install -g --unsafe-perm node-red
-node-red -v
