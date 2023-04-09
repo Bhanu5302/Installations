@@ -2,7 +2,7 @@
 
 
 name_ros_distro=humble
-echo "Installing ros2 humble"
+echo "Installing ros2 $name_ros_distro"
 locale  # check for UTF-8
 
 sudo apt update && sudo apt install locales
