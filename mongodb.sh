@@ -23,4 +23,7 @@ sudo systemctl status mongod
 echo "enabling mongoDB on startup"
 sudo systemctl enable mongod
 mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+sudo apt install pip
+echo "installing pymongo for python"
+pip install pymongo
 echo "MongoDB installtion is completed"
