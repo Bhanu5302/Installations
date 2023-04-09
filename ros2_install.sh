@@ -56,7 +56,14 @@ echo ">>>  {Starting ROS installation, this will take about 20 min. It will depe
 echo ""
 sudo apt install  ros-${name_ros_distro}-${package_type} 
 
+echo "source /opt/ros/$name_ros_distro/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
 
 source /opt/ros/$name_ros_distro/setup.bash
+
+sudo apt update && sudo apt install -y build-essential cmake git libbullet-dev python3-colcon-common-extensions python3-flake8 python3-pip python3-pytest-cov python3-rosdep python3-setuptools python3-vcstool wget
+sudo rosdep init
+rosdep update
 
 echo "ROS2 $name_ros_distro Installation is completed
