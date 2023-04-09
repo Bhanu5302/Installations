@@ -59,4 +59,4 @@ sudo apt install  ros-${name_ros_distro}-${package_type}
 
 source /opt/ros/$name_ros_distro/setup.bash
 
-echo "ROS2" ${name_ros_distro} "Installation is completed"
+echo "ROS2 $name_ros_distro Installation is completed
