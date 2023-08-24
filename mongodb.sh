@@ -27,3 +27,6 @@ sudo apt install pip
 echo "installing pymongo for python"
 pip install pymongo
 echo "MongoDB installtion is completed"
+sudo systemctl enable mongodb.service
+echo "Mongodb Autostart service enabled"
+
